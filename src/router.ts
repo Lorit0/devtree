@@ -1,12 +1,10 @@
 import { Router } from 'express'
 const router = Router()
 
-//Routing
-router.get("/", (req, res) => {
-    res.send("Ruta principal")
-})
-router.get("/nosotros", (req, res) => {
-    res.send("Nosotros")
+/* Autenticación y registro */
+router.post("/auth/register", (req, res) => {
+    const { name, email } = req.body
+    console.log(name, email)
 })
 
 export { router }
