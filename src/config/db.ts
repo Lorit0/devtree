@@ -9,6 +9,6 @@ export const connectDB = async () => {
         console.log(colors.cyan.bold.bgCyan(`Mongodb Conectado en: ${connection.host}`))
     } catch (error) {
         console.log(colors.bgRed.white.bold(error.message))
-
+        /* aquiiiiiiiiiiiiiiiiiiiiiiiiiiiii carpeta 7 video 1 */
     }
 }
